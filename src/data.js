@@ -1,10 +1,33 @@
-// funções de exemplo
 
-export const example = () => {
-  return 'example';
+//import data from './data/pokemon.js'
+
+
+
+/*
+
+export const getPokemons = (data) => {
+    let pokemon = data;
+    return pokemon.map(() => ({id,name,img,types,weight,height}));   
+ 
 };
 
-export const anotherExample = () => {
-  return 'OMG';
+export const getPokemons = () => {
+    let poke = data.pokemon;
+   
+    for(let pokemon of poke){
+        return pokemon;
+    }
+
+
 };
 
+
+export const filterData(data, condition) = () => {
+  
+  
+};
+
+export const computeStats(data) = () => {
+  
+  
+} */
