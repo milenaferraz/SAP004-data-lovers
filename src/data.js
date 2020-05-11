@@ -2,12 +2,9 @@
 
 
 export const filtro = {
-    
-    name: (input,name) => {
-       return (name === input)
-        
-    }
+
+  name: (input, name) => {
+    return (name === input)
+
+  }
 };
-
-
-
