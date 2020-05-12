@@ -2,19 +2,21 @@ import data from './data/pokemon.js'
 //import { filtro } from './data.js';
 
 window.addEventListener('load', () => {
-  getData();
+  getData(pokemons);
 });
 
 
 const pokemons = data.pokemon;
 const container = document.getElementById("card-container");
 const button = document.getElementById("button");
-//const input = document.getElementById("input")
 
 
-const getData = () => {
 
-  for (let poke of pokemons) {
+
+
+const getData = (data) => {
+  container.innerHTML = ""
+  for (let poke of data) {
     const img = poke.img,
       id = poke.id,
       name = poke.name,
@@ -23,7 +25,6 @@ const getData = () => {
     card(img, id, name, type);
   }
 }
-
 
 const card = (img, id, name, type) => {
 
@@ -39,8 +40,15 @@ const card = (img, id, name, type) => {
 };
 
 
-
 button.addEventListener('click', () => {
-
+  const input = document.getElementById("input").value;
+  getData(filter(input))
 
 });
+
+function filter(input) {
+
+  return pokemons.filter(item => item.name.toLowerCase() === input.toLowerCase());
+
+}
+
