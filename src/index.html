@@ -1,68 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
     
-      <header>
-        <div class="container"></div>
-          <nav class="header-nav">
-            <img src="./img/logo2.png" class= "logo" alt="Pokecards">
-              <ul class="nav-links">
-                <li>
-                 <a class="nav-item" href="#"> História</a>
-                </li>
-                <li>
-                  <a class="nav-item" href="#"> Personagens</a>
-                 </li>
-                 <li>
-                  <a class="nav-item" href="#"> Como Jogar?</a>
-                 </li>
-              </ul>  
-          <nav>
-        </div>        
-      </header>
-      <main>
-        <nav class="main-nav">
-          <div class="main-search">
-            <input type="text" id="input" class="input" />      
-            <button class="button" id="button">Buscar</button>
-          </div>
-          <div class="main-options">
-            <select name="options" id="options">
-              <option>Ordenar</option>
-              <option value="az">A - Z</option>
-              <option value="za">Z - A</option>          
-            </select>
-          </div>
-        </nav>    
-        
-           
-      </main>
-
-      
-      <div class="card" id="card-container">
-        
-
+      <nav class="header-nav">
+        <img src="./img/logo2.png" class="logo" alt="Pokecards" />
+        <ul class="nav-links">
+          <li>
+            <a class="nav-item" href="#"> História</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#"> Personagens</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#"> Como Jogar?</a>
+          </li>
+        </ul>
+      </nav>
+    
+  </header>
+  <main>
+    <nav class="main-nav">
+      <div class="main-search">
+        <input type="text" id="input" class="input" />
+        <button class="button" id="button">Buscar</button>
       </div>
+      <div class="main-options">
+        <select class="options" id="options">
+          <option value="">Ordenar</option>
+          <option value="az">A - Z</option>
+          <option value="za">Z - A</option>
+        </select>
+      </div>
+    </nav>
 
 
-          <footer>
-        <div class="footer-container">
-          <div class="footer-media">
-            <a href="#" class="facebook">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a href="#" class="instagram">
-							<i class="fa fa-instagram"></i>
-						</a>
-          </div>
-        </div>
-      </footer>
-    <script src="main.js" type="module"></script>
-    
-  </body>
+  </main>
+  <div class="card" id="card-container">
+
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-media">
+        <a href="#" class="facebook">
+          <i class="facebook"></i>
+        </a>
+        <a href="#" class="instagram">
+          <i class="instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js" type="module"></script>
+
+  <div id="modal-container" class="modal-container">
+
+    <div class="modal" id="modal">
+      <h3 class="Caracteristícas do Pokemons"></h3>
+    </div>
+
+  </div>
+</body>
+
 </html>
