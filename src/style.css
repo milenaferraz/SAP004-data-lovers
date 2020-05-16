@@ -189,14 +189,40 @@ header:after {
   
 }
 
-
 .card-lista .img {
   background-color: rgba(#000000, 0.7);
   padding: 1em 2em 0;
   border-radius: 3px 3px 0 0;
 }
 
+.card-inf-egg .img{
+  width: 1em;
+  height: 1em;
+}
 
+.card-modal{
+  font-size: 5em;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 10px;
+     
+}
+.card-table{
+  
+
+}
+
+  th, td {
+    width: 100%;
+        
+  }
+  .card-table td.color{
+    background: rgb(252, 215, 66);
+    font-style: bold;
+    
+  }
 
 
 /* FOOTER*/
@@ -216,14 +242,6 @@ footer {
   height: 100px;
   display: flex;
   justify-content: center;
-
-}
-
-.footer-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
 
 }
 
@@ -423,8 +441,8 @@ footer {
 /* Inicio Modal */
 
 .modal-container {
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0px;
@@ -443,16 +461,17 @@ footer {
 
 .modal{
   background: linear-gradient(110deg, rgb(243, 241, 236) 0%, rgb(249, 248, 252) 100%);
-  width: 60%;
-  height: 40%;
+  width: 30%;
+  height: 59%;
   min-width: 300px;
-  padding: 40px;
+  padding: 1px;
   border: 5px solid #e4bb23;
   box-shadow: 0 0 0 10px white;
   font-style:  black;
   border-radius: 15px;
   position: relative;
   margin-top: 100px;
+  box-shadow: 0px 5px 20px;
 }
 
   @keyframes modal {

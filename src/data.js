@@ -7,9 +7,10 @@ export const filtro = (input) => {
 
 export const filtroId = (cardId) => {
 	return (pokemons) => {
-		return +pokemons.id === +cardId;
+		return (Number(pokemons.id) == cardId);
 	};
 };
+
 
 export const ordenarAZ = (pokemons) => {
   const arrayName = pokemons.map((item) => item.name);
