@@ -13,8 +13,9 @@ export const filtroId = (cardId) => {
 
 
 export const ordenarAZ = (pokemons) => {
-  const arrayName = pokemons.map((item) => item.name);
+const arrayName = pokemons.map((item) => item.name);
 	return arrayName.sort();
+	
 };
 
 export const ordenarZA = (ordenarAZ) => ordenarAZ().reverse();
