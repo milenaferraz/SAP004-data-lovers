@@ -1,5 +1,5 @@
 import data from './data/pokemon.js';
-import { filtro, filtroId, ordenarAZ, ordenarZA } from './data.js';
+import { filtro, filtroId, ordenarAZ, ordenarZA, type } from './data.js';
 import { cardModal } from './cardModal.js';
 
 const pokemons = data.pokemon;
@@ -69,15 +69,18 @@ const cardSelect = () => {
 }
 
 const dropdown = (value, pokemons) => {
-	if (value === 'az') {
-		let data = ordenarAZ(pokemons);
-		return getData(data);
-	} else if (value === 'za') {
-		return getData(ordenarZA(pokemons));
-	} else {
-		return getData;
-	}
-};
+  switch(value) {
+    case 'az':
+      let data = ordenarAZ(pokemons);
+		  return getData(data);
+    case 'za':
+      return getData(ordenarZA(pokemons));
+    case 'type':
+      return getData(type(pokemons));
+    default:
+      getData(pokemons);
+  }
+}
 
 const iniciaModal = (modalId, cardId) => {
 	const modal = document.getElementById(modalId);

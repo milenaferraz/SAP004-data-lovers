@@ -21,3 +21,10 @@ export const ordenarAZ = (pokemons) => {
 export const ordenarZA = (pokemons) => {
 	return ordenarAZ(pokemons).reverse();
 }
+
+export const type = (pokemons) => {
+	var teste = pokemons.sort((a,b)=> {
+		return a.type < b.type ? -1 : a.type > b.type ? 1 : 0;
+	})
+	return teste;
+}

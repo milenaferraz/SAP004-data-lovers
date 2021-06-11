@@ -82,7 +82,7 @@ export const cardModal = (
                     <tr> 
                         <td colspan="2" class="color">PRÓXIMA EVOLUÇÃO</td>                        
                     </tr>
-                        <td>${nextEvolution}</td>
+                        <td>${nextEvolution.map(el => el.name)}</td>
                     <tr>
                     </tr>
                   </tbody>
