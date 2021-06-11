@@ -11,11 +11,13 @@ export const filtroId = (cardId) => {
 	};
 };
 
-
 export const ordenarAZ = (pokemons) => {
-const arrayName = pokemons.map((item) => item.name);
-	return arrayName.sort();
-	
-};
+	var teste = pokemons.sort((a,b)=> {
+		return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+	})
+	return teste;
+}
 
-export const ordenarZA = (ordenarAZ) => ordenarAZ().reverse();
+export const ordenarZA = (pokemons) => {
+	return ordenarAZ(pokemons).reverse();
+}
