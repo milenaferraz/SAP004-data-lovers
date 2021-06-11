@@ -6,6 +6,7 @@ const pokemons = data.pokemon;
 const container = document.getElementById('card-container');
 const button = document.getElementById('button');
 const options = document.getElementById('options');
+const limpar = document.getElementById('clear');
 
 
 window.addEventListener('load', ()  => {
@@ -32,6 +33,11 @@ options.addEventListener('change', (e) => {
 	const value = e.target.value;
 	dropdown(value, pokemons);
 });
+
+limpar.addEventListener('click', () => {
+  document.getElementById('input').value = "";
+  loadingPokemons();  
+})
 
 const getData = (data) => {
 	container.innerHTML = '';
